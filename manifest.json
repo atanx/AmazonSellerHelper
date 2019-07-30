@@ -5,14 +5,14 @@
   "version": "1.0.0",
   "background": {
     "scripts": [
-        "js/jquery.js",
+      "js/jquery.js",
       "js/background.js"
     ],
     "persistent": true
   },
   "icons": {
-        "48": "image/amz48.png"
-    },
+    "48": "image/amz48.png"
+  },
   "browser_action": {
     "default_title": "亚马逊关键词助手",
     "default_icon": "image/amz19.png"
@@ -49,10 +49,12 @@
   "permissions": [
     "notifications",
     "tabs",
-    "*://*/*",
-    "webRequest", "webRequestBlocking"
+    "http://*/*",
+    "https://*/*",
+    "webRequest",
+    "webRequestBlocking"
   ],
   "web_accessible_resources": [
-  "image/logo_48.png"
+    "image/logo_48.png"
   ]
 }
